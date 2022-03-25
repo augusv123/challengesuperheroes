@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "c206e9b4-3285-48a8-bcfa-dd43f77bad1f",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "importar superheroes a db",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_file",
+							"type": "file",
+							"src": "/Users/augustovidal/Desktop/superheros.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/importcsv?uploaded_fule",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"importcsv"
+					],
+					"query": [
+						{
+							"key": "uploaded_fule",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener superheroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/importcsv",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"importcsv"
+					],
+					"query": [
+						{
+							"key": "getSuperheroes",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
